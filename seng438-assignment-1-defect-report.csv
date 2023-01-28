@@ -1,0 +1,814 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Affects versions,Affects versions,Fix versions,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Œ£ Original Estimate,Œ£ Remaining Estimate,Œ£ Time Spent,Security Level,Custom field (Actual end),Custom field (Actual start),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Custom field (Start date),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field ([CHART] Date of First Response),Status Category
+ET: Cancelled Transaction: Unexpected Input Causes Withdrawal,S4A-37,10036,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,1/26/2023 19:54,1/27/2023 8:11,1/27/2023 8:01,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Transfer as a transaction type.
+# Click 'Cancel' on the numpad.
+# Click '3' on the numpad.
+
+*Expected Outcome:*
+
+The machine should do nothing in response to this unexpected input.
+
+*Actual Outcome:*
+
+The ATM withdraws $20 even with 0 bills in the system.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1 (WIndows).",,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,,,,,,,,,,,,,,,,,,,,,,,,0|i0007r:,,,,,,,,,,In Progress
+ET: Transfer: Unexpected Input Causes Withdrawal,S4A-36,10035,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,1/26/2023 19:52,1/27/2023 8:11,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '3' on the numpad to choose Transfer as a transaction type.
+# Click '4' on the numpad
+
+*Expected Outcome:*
+
+The machine should do nothing in response to this unexpected input.
+
+*Actual Outcome:*
+
+The ATM withdraws $20 even with 0 bills in the system.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1 (Windows).",,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,,,,,,,,,,,,,,,,,,,,,,,,0|i0007j:,,,,,,,,,,In Progress
+ET: Deposit: Unexpected Input Causes Withdrawal,S4A-35,10034,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,1/26/2023 19:51,1/27/2023 8:11,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Transfer as a transaction type.
+# Click '4' on the numpad
+
+*Expected Outcome:*
+
+The machine should do nothing in response to this unexpected input.
+
+*Actual Outcome:*
+
+The ATM withdraws $20 even with 0 bills in the system.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1 (Windows).",,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,,,,,,,,,,,,,,,,,,,,,,,,0|i0007b:,,,,,,,,,,In Progress
+ET: Balance Inquiry: Unexpected Input Causes Withdrawal,S4A-34,10033,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,1/26/2023 19:48,1/27/2023 8:11,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '4' on the numpad to choose Transfer as a transaction type.
+# Click '4' on the numpad
+
+*Expected Outcome:*
+
+The machine should do nothing in response to this unexpected input.
+
+*Actual Outcome:*
+
+The ATM withdraws $20 even with 0 bills in the system.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1 (Windows).",,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,,,,,,,,,,,,,,,,,,,,,,,,0|i00073:,,,,,,,,,,In Progress
+ET: Transaction Type: Unexpected Input Causes Withdrawal,S4A-33,10032,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,1/26/2023 19:46,1/27/2023 8:12,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '5' on the numpad
+
+*Expected Outcome:*
+
+The machine should do nothing in response to this unexpected input.
+
+*Actual Outcome:*
+
+The ATM withdraws $20 even with 0 bills in the system.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1 (Windows).",,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,,,,,,,,,,,,,,,,,,,,,,,,0|i0006v:,,,,,,,,,,In Progress
+ET: Withdrawal: Account Screen Unexpected Input Causes Withdrawal,S4A-32,10031,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,1/26/2023 19:42,1/27/2023 8:12,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Transfer as a transaction type.
+# Click '4' on the numpad
+
+*Expected Outcome:*
+
+The machine should do nothing in response to this unexpected input.
+
+*Actual Outcome:*
+
+The ATM withdraws $20 even with 0 bills in the system.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1 (Windows).",,Mushtaba Al Yasseen,70121:88ef277e-e7c0-4dae-a757-0117fc3d092d,,,,,,,,,,,,,,,,,,,,,,,,0|i0006n:,,,,,,,,,,In Progress
+ET: Transfer: Transfer displaying incorrect card number,S4A-31,10030,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/26/2023 16:04,1/26/2023 17:24,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '3' on the numpad to choose Transfer as a transaction type.
+# Click '1' in the numpad to choose Checking as the account to transfer from.
+# Click '2' in the numpad to choose Savings as the account to transfer to.
+# Use the numpad to type in ""20.00"" as the deposit amount and click ""ENTER"".
+
+*Expected Outcome:*
+
+The receipt should indicate that the transfer was made from CARD 1.
+
+*Actual Outcome:*
+
+The receipt indicates that the transfer was made from CARD 2.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0006f:,,,,,,,,,,In Progress
+ET: Deposit: Savings Account deposit incorrect card number,S4A-30,10029,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/26/2023 15:55,1/26/2023 16:08,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '5' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click '2' on the numpad to choose Savings as the account to deposit.
+# Enter amount ""2.00"" to deposit.
+# Click ""click to insert envelope"" button
+
+*Expected Outcome:*
+
+The envelope should indicate that the deposit to Saving""s account was made from CARD 1.
+
+*Actual Outcome:*
+
+The envelope indicates that the deposit to Saving""s account was made from CARD 2.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i00067:,,,,,,,,,,In Progress
+ET: Deposit: Checking's Account deposit incorrect card number,S4A-29,10028,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/26/2023 15:50,1/26/2023 16:08,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '5' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click '1' on the numpad to choose Checking as the account to deposit.
+# Enter amount ""2.00"" to deposit.
+# Click ""click to insert envelope"" button
+
+*Expected Outcome:*
+
+The envelope should indicate that the deposit to Checking""s account was made from CARD 1.
+
+*Actual Outcome:*
+
+The envelope indicates that the deposit to Checking""s account was made from CARD 2.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0005z:,,,,,,,,,,In Progress
+ET: Withdraw: Savings Account withdraw incorrect card number,S4A-28,10027,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/26/2023 15:47,1/26/2023 15:55,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '5' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdraw as a transaction type.
+# Click '2' on the numpad to choose Savings as the account to withdraw.
+# Click '1' on the numpad to choose $20 as amount.
+
+*Expected Outcome:*
+
+The receipt should indicate that the withdrawal from Saving""s account was made from CARD 1.
+
+*Actual Outcome:*
+
+The receipt indicates that the withdrawal Saving""s account was made from CARD 2.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0005r:,,,,,,,,,,In Progress
+ET: Withdraw: Checking Account withdraw incorrect card number,S4A-27,10026,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/26/2023 15:42,1/26/2023 15:52,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, a valid number of $20 bills and card number and pin are inputted into the machine. Enter machine as card 1. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '5' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdraw as a transaction type.
+# Click '1' on the numpad to choose Checking as the account to withdraw.
+# Click '1' on the numpad to choose $20 as amount.
+
+*Expected Outcome:*
+
+The receipt should indicate that the withdrawal Checking""s account was made from CARD 1.
+
+*Actual Outcome:*
+
+The receipt should indicate that the withdrawal Checking""s account was made from CARD 2.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0005j:,,,,,,,,,,In Progress
+MFT: Invalid PIN Extension: Re-entry Pin Error,S4A-26,10025,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/23/2023 9:59,1/26/2023 21:14,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""1"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""1"" or any value other than ""42"" as the incorrect PIN and click ""ENTER"".
+# Repeat step 5
+# Use the numpad to type in ""42"" as the correct PIN and click ""ENTER""
+
+*Expected Outcome:*
+
+Original transaction completes successfully and user can access their account.
+
+*Actual Outcome:*
+
+The system outputs a message stating ""úplease enter your PIN""ù ""úThen press ENTER""ù.
+
+Note: MFT 40
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0005b:,,,,,,,,,,In Progress
+MFT: Withdraw: Incorrect Message After Insufficient Cash,S4A-25,10024,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Ahad Ali,62464e0ded4d6b007013de62,1/22/2023 22:05,1/26/2023 17:23,1/22/2023 22:05,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""1"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdrawal as a transaction type.
+# Click ""ú1""ù on the numpad for Checking.
+# Click ""ú2""ù on the numpad for $40 to withdraw.
+
+*Expected Outcome:*
+
+The system outputs a message stating ""úInsufficient cash available""ù and asks the customer to choose a different amount.
+
+*Actual Outcome:*
+
+The system outputs a message stating ""úInsufficient cash available""ù but does not ask the customer to choose a different amount.
+
+Note: MFT 15
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Ahad Ali,62464e0ded4d6b007013de62,,,,,,,,,,,,,,,,,,,,,,,,0|i00053:,,,,,,,,,,In Progress
+MFT: Deposit: Incorrect Accounts Shown,S4A-24,10023,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Ahad Ali,62464e0ded4d6b007013de62,1/22/2023 20:58,1/22/2023 22:10,1/22/2023 22:05,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+
+*Expected Outcome:*
+
+The ""úAccount to deposit to""ù menu should show only the Checking and Saving Accounts. 
+
+*Actual Outcome:*
+
+The ""úAccount to deposit to""ù menu instead shows the Checking, Savings and Money Market Accounts. So it shows the Money Market Account as an option when it shouldn""t.
+
+Note: MFT 19
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Ahad Ali,62464e0ded4d6b007013de62,,,,,,,,,,,,,,,,,,,,,,,,0|i0004v:,,,,,,,,,,In Progress
+ET: Transfer: Unresponsive program error,S4A-22,10021,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 12:17,1/26/2023 15:30,1/22/2023 21:13,1/23/2023 11:09,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '3' on the numpad to choose Transfer as a transaction type.
+# Click any number besides ""1' , ""2"" , and '3"" on the numpad to choose account to transfer from.
+
+*Expected Outcome:*
+
+The program notifies user of invalid selection.
+
+*Actual Outcome:*
+
+Program becomes unresponsive for a short period of time and no buttons are able to be register.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0004f:,,,,,,,,,,Done
+ET: Deposit: Unresponsive program error,S4A-21,10020,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 12:08,1/26/2023 15:30,1/22/2023 21:13,1/23/2023 11:09,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click any number besides ""1' , ""2"" , and '3"" on the numpad to choose account to deposit to.
+
+*Expected Outcome:*
+
+The program notifies user of invalid selection.
+
+*Actual Outcome:*
+
+Program becomes unresponsive for a short period of time and no buttons are able to be register.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,Done
+ET: Balance Inquiry: Missing savings account inquiry option,S4A-19,10018,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 11:52,1/23/2023 11:09,1/22/2023 21:13,1/23/2023 11:09,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '4' on the numpad to choose Balance Inquiry as a transaction type.
+# Click '3' on the numpad to choose a non-existing entry.
+
+*Expected Outcome:*
+
+The program should not do anything, or output a message notifying user of incorrect/unknown selection.
+
+*Actual Outcome:*
+
+The program outputs a $20 bill and no error message is outputted for an incorrect selection.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0003z:,,,,,,,,,,Done
+ET: Pin: Card not correctly retained,S4A-18,10017,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 11:47,1/26/2023 17:21,1/22/2023 21:16,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""1"" as the PIN and click ""ENTER"".
+# Repeat step 5 two more times, system outputs ""úYour card has been retained Please contact the bank""ù
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Enter ""42"" as Pin
+
+*Expected Outcome:*
+
+The program should re-notify the user to contact the bank as the card has previously been retained
+
+*Actual Outcome:*
+
+The program successfully accepts the pin and allows user to choose transaction type
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0003r:,,,,,,,,,,In Progress
+ET: Balance Inquiry: Unresponsive program error,S4A-17,10016,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 11:39,1/23/2023 11:07,1/22/2023 21:13,1/23/2023 11:07,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. 
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '4' on the numpad to choose Balance Inquiry as a transaction type.
+# Click any number besides ""1' and '2"" on the numpad to choose Balance Inquiry as a transaction type.
+
+*Expected Outcome:*
+
+The program should have a third option to inquire Saving account, instead the program crashes and becomes unresponsive
+
+*Actual Outcome:*
+
+Only accounts user can inquire from is 1) Checking and 2) Money Market",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0003j:,,,,,,,,,,Done
+ET: Deposit: Incorrect deposit to Savings,S4A-16,10015,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 11:30,1/26/2023 17:21,1/22/2023 21:13,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and zero number of $20 bills are inputed. A valid card number and pin are inputted into the machine. The initial balance of the Checking account is $100.00.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '0' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click '1' in the numpad to choose Checking as a deposit source.
+# Use the numpad to type in ""20"" as the deposit amount and click ""ENTER"".
+# Click the ""Click to insert envelope' button.
+
+*Expected Outcome:*
+
+The machine will deposit $20 in the user""s balance and the new balance is $120.00 in the receipt.
+
+*Actual Outcome:*
+
+The machine accepts the deposit of $20, but the total balance in the receipt is shown as $110.00.
+
++Update - Version 1.1+
+
++Defect still exists in Version 1.1.+",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0003b:,,,,,,,,,,In Progress
+ET: Transfer: Zero balance account not transferred correctly,S4A-15,10014,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 9:53,1/26/2023 16:05,1/22/2023 21:16,1/23/2023 11:03,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, zero number of $20 bills and a valid number of card number were inputted into the machine. The initial balance of the Checking account is $100 and the initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""0"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '3' on the numpad to choose Transfer as a transaction type.
+# Click '1' in the numpad to choose Checking as the account to transfer from.
+# Click '2' in the numpad to choose Savings as the account to transfer to.
+# Use the numpad to type in ""20.00"" as the deposit amount and click ""ENTER"".
+
+*Expected Outcome:*
+
+The receipt will reflect that the machine has transferred $20.00 from Checking to Saving and the new balance in the Saving account is $20.00.
+
+*Actual Outcome:*
+
+The receipt reflects that the machine has transferred ""$19.50"" from Savings to Checking and the new balance in the Saving account is $1019.50.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i00033:,,,,,,,,,,Done
+ET and MFT: Deposit: Incorrect $20 deposit to Checking,S4A-14,10013,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 9:28,1/26/2023 17:20,1/22/2023 21:14,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and zero number of $20 bills are inputed. A valid card number and pin are inputted into the machine. The initial balance of the Checking account is $100.00.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '0' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click '1' in the numpad to choose Checking as a deposit source.
+# Use the numpad to type in ""20"" as the deposit amount and click ""ENTER"".
+# Click the ""Click to insert envelope' button.
+
+*Expected Outcome:*
+
+The machine will deposit $20 in the user""s balance and the new balance is $120.00 in the receipt.
+
+*Actual Outcome:*
+
+The machine accepts the deposit of $20, but the total balance in the receipt is shown as $110.00.
+
+Note: MFT 21
+
++Update - Version 1.1+
+
+Defect still partially exists in Version 1.1. The receipt now shows $119.90 as total balance and wrong card number still exists.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0002v:,,,,,,,,,,In Progress
+ET and MFT: Balance Inquiry: Checking Account inquiry incorrect card number,S4A-13,10012,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Parbir Lehal,63cc83764ea03a3b2f301866,Parbir Lehal,63cc83764ea03a3b2f301866,1/22/2023 9:14,1/26/2023 15:46,1/23/2023 21:14,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and zero number of $20 bills are inputed. A valid card number and pin are inputted into the machine. The initial balance of the Checking account is $100.00.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter '0' as the number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '4' on the numpad to choose Balance Inquiry as a transaction type.
+# Click '1' on the numpad to choose Checking as the account to inquire
+
+*Expected Outcome:*
+
+The receipt should indicate that the inquiry was from CHKG account, CARD 1  and the balance is $100.00
+
+*Actual Outcome:*
+
+The Simulated ATM Display outputs $100.00 as total balance, CARD 2 and from the CHKG account.
+
+Note: MFT 34
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1.",,Parbir Lehal,63cc83764ea03a3b2f301866,,,,,,,,,,,,,,,,,,,,,,,,0|i0002n:,,,,,,,,,,In Progress
+ET: Balance Inquiry: Savings account option not available,S4A-10,10009,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 22:12,1/22/2023 21:55,1/27/2023 8:18,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '4' on the numpad to choose Balance Inquiry as a transaction type.
+
+*Expected Outcome:*
+
+There should be an option in the Simulated ATM Display to view the balance amount of the user""s Savings account. 
+
+*Actual Outcome:*
+
+There is no option displayed to view the balance amount of the user""s Savings account, only options to view their Checking and Money Market account balances.
+
++Update - Version 1.1+
+
+Defect has been partially resolved in Version 1.1. The Savings account shows as expected, but the Money Market account balance shows when it shouldn""t.",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0001z:,,,,,,,,,,In Progress
+ET and MFT: Transfer: $0.01 not transferred correctly,S4A-9,10008,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 22:10,1/24/2023 11:49,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Checking account is $100 and the initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '3' on the numpad to choose Transfer as a transaction type.
+# Click '2' in the numpad to choose Savings as the account to transfer from.
+# Click '1' in the numpad to choose Checking as the account to transfer to.
+# Use the numpad to type in ""0.01"" as the deposit amount and click ""ENTER"".
+
+*Expected Outcome:*
+
+The receipt will reflect that the machine has transferred $0.01 from Savings to Checking and the new balance in the Checking account is $100.01.
+
+*Actual Outcome:*
+
+The receipt reflects that the machine has transferred ""$0.0-49"" from Checking to Savings and the new balance in the Checking account is $99.51.
+
++Update - Version 1.1+
+
+Defect still partially exists in Version 1.1. The new balance in the Checking account is $100.01, but the receipt still says that the transfer was from Checking to Savings.
+
+Note: MFT 29",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0001r:,,,,,,,,,,In Progress
+ET and MFT: Transfer: $100 not transferred correctly,S4A-8,10007,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 22:05,1/24/2023 11:50,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Checking account is $100 and the initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '3' on the numpad to choose Transfer as a transaction type.
+# Click '2' in the numpad to choose Savings as the account to transfer from.
+# Click '1' in the numpad to choose Checking as the account to transfer to.
+# Use the numpad to type in ""100.00"" as the deposit amount and click ""ENTER"".
+
+*Expected Outcome:*
+
+The receipt will reflect that the machine has transferred $100 from Savings to Checking and the new balance in the Checking account is $200.
+
+*Actual Outcome:*
+
+The receipt reflects that the machine has transferred $99.50 from Checking to Savings and the new balance in the Checking account is $199.50.
+
++Update - Version 1.1+
+
+Defect still partially exists in Version 1.1. The new balance in the Checking account is $200, but the receipt still says that the transfer was from Checking to Savings.
+
+Note: MFT 29",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0001j:,,,,,,,,,,In Progress
+ET and MFT: Deposit: $0.01 not deposited correctly,S4A-7,10006,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 21:53,1/24/2023 11:48,1/27/2023 8:42,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Checking account is $100.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click '1' in the numpad to choose Checking as a deposit source.
+# Use the numpad to type in ""0.01"" as the deposit amount and click ""ENTER"".
+# Click the ""Click to insert envelope"" button.
+
+*Expected Outcome:*
+
+The machine will deposit $0.01 in the user""s balance and the new balance is $100.01 in the receipt.
+
+*Actual Outcome:*
+
+The machine accepts the deposit of $0.01, but the total balance in the receipt is shown as $90.01.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1. The total balance in the receipt now shows $199.72.
+
+Note: MFT 21",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0001b:,,,,,,,,,,In Progress
+ET and MFT: Deposit: $100 not deposited correctly,S4A-6,10005,Bug,In Progress,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 21:47,1/24/2023 11:48,1/27/2023 8:01,,ATM Version 1.0,ATM Version 1.1,,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Checking account is $100.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '2' on the numpad to choose Deposit as a transaction type.
+# Click '1' in the numpad to choose Checking as a deposit source.
+# Use the numpad to type in ""100.00"" as the deposit amount and click ""ENTER"".
+# Click the ""Click to insert envelope"" button.
+
+*Expected Outcome:*
+
+The machine will deposit $100 in the user""s balance and the new balance is $200 in the receipt.
+
+*Actual Outcome:*
+
+The machine accepts the deposit of $100, but the total balance in the receipt is shown as $190.
+
++Update - Version 1.1+
+
+Defect still exists in Version 1.1. The total balance in the receipt now shows $199.90.
+
+Note: MFT 21",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i00013:,,,,,,,,,,In Progress
+ET: Withdrawal: $20 received instead of $200,S4A-5,10004,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 21:38,1/22/2023 21:23,1/22/2023 21:16,1/22/2023 21:23,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdrawals as a transaction type.
+# Click '2' in the numpad to choose Savings as a withdrawal source.
+# Click '5' to withdraw $200 of cash from the machine.
+
+*Expected Outcome:*
+
+The machine will output $200 to the user and show that $200 was deducted from the receipt.
+
+*Actual Outcome:*
+
+The machine outputs $20 to the user and shows that $20 was deducted in the receipt.",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0000v:,,,,,,,,,,Done
+ET: Withdrawal: $100 received instead of $60,S4A-4,10003,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 21:34,1/22/2023 21:18,1/22/2023 20:25,1/22/2023 21:18,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdrawals as a transaction type.
+# Click '2' in the numpad to choose Savings as a withdrawal source.
+# Click '3' to withdraw $60 of cash from the machine.
+
+*Expected Outcome:*
+
+The machine will output $60 to the user and show that $60 was deducted in the receipt.
+
+*Actual Outcome:*
+
+The machine outputs $100 to the user and shows that $100 was deducted in the receipt.",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0000n:,,,,,,,,,,Done
+ET: Withdrawal: $60 received instead of $40,S4A-3,10002,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Ahad Ali,62464e0ded4d6b007013de62,Athul Rajagopal,63cc81db6178fcc941d9e4a9,1/21/2023 21:29,1/22/2023 21:18,1/27/2023 8:42,1/22/2023 21:17,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdrawals as a transaction type.
+# Click '2' in the numpad to choose Savings as a withdrawal source.
+# Click '2' to withdraw $40 of cash from the machine.
+
+*Expected Outcome:*
+
+The machine will output $40 to the user and show that $40 was deducted in the receipt.
+
+*Actual Outcome:*
+
+The machine outputs $60 to the user and shows that $60 was deducted in the receipt.",,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,,,,,,,,,,,,,,,,,,,,,,,0|i0000f:,,,,,,,,,,Done
+ET and MFT: Withdrawal: $40 received instead of $20,S4A-2,10001,Bug,Done,S4A,seng-438-a1,software,Athul Rajagopal,63cc81db6178fcc941d9e4a9,,Medium,Done,,,Ahad Ali,62464e0ded4d6b007013de62,Ahad Ali,62464e0ded4d6b007013de62,1/21/2023 20:54,1/22/2023 21:12,1/26/2023 18:49,1/22/2023 21:11,ATM Version 1.0,,ATM Version 1.1,,0,"*Initial State of the system:*
+
+The program is turned ON, and a valid number of $20 bills and card number were inputted into the machine. The initial balance of the Savings account is $1000.
+
+*Steps to Reproduce:*
+
+# Turn the program ON.
+# Enter ""10"" as a number of $20 bills.
+# Click on ""úclick to insert card.""ù
+# Enter '1' as a card number.
+# Use the numpad to type in ""42"" as the PIN and click ""ENTER"".
+# Click '1' on the numpad to choose Withdrawals as a transaction type.
+# Click '2' in the numpad to choose Savings as a withdrawal source.
+# Click '1' to withdraw $20 of cash from the machine.
+
+*Expected Outcome:*
+
+The machine will output $20 to the user and show that $20 was deducted in the receipt.
+
+*Actual Outcome:*
+
+The machine outputs $40 to the user and shows that $40 was deducted in the receipt.
+
+
+
+Note: MFT 14",,Ahad Ali,62464e0ded4d6b007013de62,,,,,,,,,,,,,,,,,,,,,,,,0|i00007:,,,,,,,,,,Done
